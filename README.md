@@ -15,4 +15,4 @@
 ## コンポーネント化
 
 - [サンプルコード](https://github.com/irisAsh/react-native-todo-tutorial/tree/use-props)
-- [解説ページ](https://irisash.github.io/react_native/use-props/)
+- [解説ページ](https://irisash.github.io/react_native/use_props/)
