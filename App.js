@@ -8,6 +8,7 @@ import {
   FlatList,
   SafeAreaView
 } from 'react-native';
+import FormInput from './src/components/FormInput';
 
 export default class App extends Component {
 
@@ -25,24 +26,18 @@ export default class App extends Component {
 
     return (
       <SafeAreaView style={styles.container}>
-        <View style={styles.formGroup}>
-          <Text style={styles.formLabel}>やること</Text>
-          <TextInput
-            style={styles.formControl}
-            value={todoValue}
-            placeholder="何かやること"
-            onChangeText={v => this.setState({ todoValue: v })}
-          />
-        </View>
-        <View style={styles.formGroup}>
-          <Text style={styles.formLabel}>メモ</Text>
-          <TextInput
-            style={styles.formControl}
-            value={memoValue}
-            placeholder="何かメモ"
-            onChangeText={v => this.setState({ memoValue: v })}
-          />
-        </View>
+        <FormInput
+          label="やること"
+          value={todoValue}
+          placeholder="何かやること"
+          onChangeText={v => this.setState({ todoValue: v })}
+        />
+        <FormInput
+          label="メモ"
+          value={memoValue}
+          placeholder="何かメモ"
+          onChangeText={v => this.setState({ memoValue: v })}
+        />
         <Button
           title="登録"
           onPress={() => {
@@ -79,22 +74,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
-  },
-  formGroup: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginBottom: 16,
-  },
-  formLabel: {
-    paddingRight: 16,
-  },
-  formControl: {
-    height: 40,
-    width: 160,
-    padding: 8,
-    borderColor: 'gray',
-    borderWidth: 1
   },
   listItem: {
     height: 64,
