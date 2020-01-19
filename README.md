@@ -2,5 +2,5 @@
 
 ## プロジェクトの作成
 
-- [サンプルコード](https://github.com/irisAsh/react-native-todo-tutorial/initial-project)
+- [サンプルコード](https://github.com/irisAsh/react-native-todo-tutorial/tree/initial-project)
 - [解説ページ](https://irisash.github.io/react_native/initialize/)
