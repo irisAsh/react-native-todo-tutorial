@@ -20,5 +20,5 @@
 - [解説ページ](https://irisash.github.io/react_native/use_props/)
 ## React Navigation の使い方
 
-- [サンプルコード](https://github.com/irisAsh/react-native-todo-tutorial/tree/use-react_navigation)
+- [サンプルコード](https://github.com/irisAsh/react-native-todo-tutorial/tree/use-react-navigation)
 - [解説ページ](https://irisash.github.io/react_native/use_react_navigation/)
